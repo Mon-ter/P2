@@ -1,0 +1,27 @@
+int display(int* a, int n) {
+	int i = 0;
+	while (i < n) {
+		cout << *(a + i) << " ";
+		i++;
+	}
+	cout << endl;
+	return 0;
+}
+
+int create(int** a, int n) {
+	*a = new int [n];
+	int i = 0;
+	while (i < n) {
+		*(*a + i) = rand() % 11;
+		i++;
+	}
+	return 0;
+}
+
+int main() {
+	int* A;
+	create(&A, 10);
+	display(A, 10);
+  delete [] A;
+  return 0;
+}
