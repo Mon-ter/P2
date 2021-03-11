@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 int create(int** a, int n) {
 	*a = new int [n];
 	int i = 0;
