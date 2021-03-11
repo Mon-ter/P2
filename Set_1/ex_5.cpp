@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <cstdlib>
 using namespace std;
 
 int toZero(int* a, int n) {
